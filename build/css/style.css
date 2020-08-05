@@ -442,6 +442,18 @@ html {
 .main-form__btn:hover {
   background-color: #F19202;
 }
+.main-middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
 .footer-block {
   display: -webkit-box;
   display: -webkit-flex;
