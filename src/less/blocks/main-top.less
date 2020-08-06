@@ -10,10 +10,21 @@
   background-color: #c1c1c1;
   background-image: url("/img/main-img.jpg");
   background-size: cover;
-
 }
 
+
 .main-top__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.main-top__form-block {
+  display: none;
+}
+
+
+
+.main-top__txt-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,6 +50,7 @@
 
   font-size: 10px;
   line-height: 12px;
+  user-select: none;
 }
 
 .main-top__txt--width {
@@ -60,4 +72,89 @@
 
 .main-top__txt--normal {
   font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+  .main-top {
+    display: flex;
+
+    width: 100%;
+    height: 400px;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #c1c1c1;
+    background-image: url("/img/main-img-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+
+  }
+
+
+
+
+  .main-top__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1024px;
+
+    margin: 0 auto;
+  }
+
+
+  .main-top__txt-block {
+   flex-grow: 1;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+
+  .main-top__txt {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .main-top__txt--width {
+    width: 235px;
+  }
+
+  .main-top__txt--size-xl {
+    font-size: 45px;
+    line-height: 33px;
+  }
+
+  .main-top__txt--size-m {
+    font-size: 26px;
+
+  }
+
+
+  .main-top__form-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: none;
+
+    width: 440px;
+  }
+
+
+
 }
